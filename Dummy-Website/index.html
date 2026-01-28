@@ -3,89 +3,102 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Practical Website</title>
     <link rel="stylesheet" href="style.css" />
-    <title>New Website</title>
   </head>
   <body>
-    <!-- Semantic Tags in HTML -->
-    <header>
-      <!-- nav tag is used to define navigation link -->
-      <nav class="navmenu">
-        <!-- anchor tag is used to create hyperlinks(with hyperlinks user is redirected to new page) -->
-        <a href="#">Home</a>
-        <a href="intro.html">Implant Us</a>
-        <a href="service.html">Our Services</a>
-        <a href="about.html">About Us</a>
-        <a href="contact.html">Contact Us</a>
+    <!-- Header with semantic element and navigation -->
+    <header class="site-header">
+      <h1>Welcome to My Practical Website</h1>
+      <nav aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#form">Contact</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        </ul>
       </nav>
     </header>
-    <main class="main-container">
-      <p class="para-main">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-        quisquam cum alias eum sed deserunt quam praesentium similique autem
-        cumque commodi perferendis nisi illum dicta assumenda, reprehenderit
-        voluptatibus mollitia natus!
-      </p>
-      <p class="para-main">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-        quisquam cum alias eum sed deserunt quam praesentium similique autem
-        cumque commodi perferendis nisi illum dicta assumenda, reprehenderit
-        voluptatibus mollitia natus!
-      </p>
-      <p class="para-main">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-        quisquam cum alias eum sed deserunt quam praesentium similique autem
-        cumque commodi perferendis nisi illum dicta assumenda, reprehenderit
-        voluptatibus mollitia natus!
-      </p>
-      <p class="para-main">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-        quisquam cum alias eum sed deserunt quam praesentium similique autem
-        cumque commodi perferendis nisi illum dicta assumenda, reprehenderit
-        voluptatibus mollitia natus!
-      </p>
-      <p class="para-main">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-        quisquam cum alias eum sed deserunt quam praesentium similique autem
-        cumque commodi perferendis nisi illum dicta assumenda, reprehenderit
-        voluptatibus mollitia natus!
-      </p>
-      <p class="para-main">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-        quisquam cum alias eum sed deserunt quam praesentium similique autem
-        cumque commodi perferendis nisi illum dicta assumenda, reprehenderit
-        voluptatibus mollitia natus!
-      </p>
-      <p class="para-main">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-        quisquam cum alias eum sed deserunt quam praesentium similique autem
-        cumque commodi perferendis nisi illum dicta assumenda, reprehenderit
-        voluptatibus mollitia natus!
-      </p>
-      <p class="para-main">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-        quisquam cum alias eum sed deserunt quam praesentium similique autem
-        cumque commodi perferendis nisi illum dicta assumenda, reprehenderit
-        voluptatibus mollitia natus!
-      </p>
-      <p class="para-main">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-        quisquam cum alias eum sed deserunt quam praesentium similique autem
-        cumque commodi perferendis nisi illum dicta assumenda, reprehenderit
-        voluptatibus mollitia natus!
-      </p>
-      <p class="para-main">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-        quisquam cum alias eum sed deserunt quam praesentium similique autem
-        cumque commodi perferendis nisi illum dicta assumenda, reprehenderit
-        voluptatibus mollitia natus!
-      </p>
-      <p class="para-main">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-        quisquam cum alias eum sed deserunt quam praesentium similique autem
-        cumque commodi perferendis nisi illum dicta assumenda, reprehenderit
-        voluptatibus mollitia natus!
-      </p>
+
+    <!-- Main content -->
+    <main>
+      <!-- About Section -->
+      <section id="about" class="about-section">
+        <h2>About This Site</h2>
+        <p>
+          This website demonstrates
+          <strong>HTML5, CSS3, and JavaScript</strong> concepts in a practical
+          way.
+        </p>
+        <button id="change-text-btn">Click Me!</button>
+      </section>
+
+      <!-- Form Section -->
+      <section id="form" class="form-section">
+        <h2>Contact Form</h2>
+        <form id="contactForm">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+            aria-label="Name"
+          />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+            aria-label="Email"
+          />
+
+          <label for="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Write your message"
+            required
+            aria-label="Message"
+          ></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+        <p id="form-output" aria-live="polite"></p>
+      </section>
+
+      <!-- Gallery Section -->
+      <section id="gallery" class="gallery-section">
+        <h2>Image Gallery</h2>
+        <div class="gallery-grid">
+          <img
+            src="/Frontend/Dummy-Website/images/website-development-img.jpg"
+            alt="Placeholder Image 1"
+          />
+          <img
+            src="/Frontend/Dummy-Website/images/website-development-img.jpg"
+            alt="Placeholder Image 2"
+          />
+          <img
+            src="/Frontend/Dummy-Website/images/website-development-img.jpg"
+            alt="Placeholder Image 3"
+          />
+          <img
+            src="/Frontend/Dummy-Website/images/website-development-img.jp"
+            alt="Placeholder Image 4"
+          />
+        </div>
+      </section>
     </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <p>&copy; 2026 My Practical Website</p>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
